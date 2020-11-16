@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+.card-violet {
+  background-color: #7541c8;
+}
 .card-darkGray {
   background-color: #48556a;
 }
@@ -497,7 +500,8 @@ body {
 }
 
 .card-one {
-  background: #7541c8 url(../images/bg-pattern-quotation.svg) no-repeat;
+  background-image: url(../images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
   background-position: 95% 1%;
 }
 
