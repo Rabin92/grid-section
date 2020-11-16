@@ -11,8 +11,7 @@
     margin-top: 25px;
   }
   &-intro {
-    display: flex;
-    align-items: center;
+    @include flexy($a-items: center);
 
     div {
       margin-left: 15px;
@@ -38,8 +37,8 @@
 
 .card-body {
   &-intro {
-    display: flex;
-    align-items: center;
+    @include flexy($a-items: center);
+
     div {
       margin-left: 15px;
       p {
