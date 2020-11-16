@@ -2,9 +2,12 @@
 
 .card {
   padding: 1.5em;
-  color: hsl(0, 0%, 100%);
+  color: $primary_col;
   border-radius: 8px;
   + .card {
+    @media #{$break-l} {
+      margin-top: initial;
+    }
     margin-top: 25px;
   }
   &-intro {
@@ -25,18 +28,37 @@
   &-content {
     margin-top: 20px;
 
-    p + p {
-      margin-top: 20px;
+    h2 + p {
+      margin-top: 10px;
       color: hsl(0, 0%, 81%);
       opacity: 70%;
     }
   }
 }
 
-// .intro {
-//   font-size: 20px;
-//   font-weight: 600;
-// }
+.card-body {
+  &-intro {
+    display: flex;
+    align-items: center;
+    div {
+      margin-left: 15px;
+      p {
+        color: $primary_text_col;
+        + p {
+          opacity: 50%;
+        }
+      }
+    }
+  }
+  &-content {
+    margin-top: 20px;
+    color: $primary_text_col;
+    h2 + p {
+      margin-top: 10px;
+      opacity: 70%;
+    }
+  }
+}
 
 /* Card background color */
 .card-one {
@@ -47,12 +69,9 @@
 .card-two {
   background-color: hsl(217, 19%, 35%);
 }
-.card-three {
-  background-color: hsl(0, 0%, 100%);
-}
 .card-four {
   background-color: hsl(219, 29%, 14%);
 }
-.card-five {
+.card-body {
   background-color: hsl(0, 0%, 100%);
 }
