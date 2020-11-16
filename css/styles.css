@@ -1,3 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+.card-violet {
+  background-color: #7541c8;
+}
+.card-darkGray {
+  background-color: #48556a;
+}
+.card-white1 {
+  background-color: white;
+}
+.card-darkBlue {
+  background-color: #19212e;
+}
+.card-white2 {
+  background-color: white;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -5,7 +22,6 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -483,24 +499,6 @@ body {
   opacity: 70%;
 }
 
-/* Card background color */
-.card-one {
-  background: #7541c8 url(../images/bg-pattern-quotation.svg) no-repeat;
-  background-position: 95% 1%;
-}
-
-.card-two {
-  background-color: #48556a;
-}
-
-.card-four {
-  background-color: #19212e;
-}
-
-.card-body {
-  background-color: white;
-}
-
 /* ******************************* IMG-AVATAR ******************************* */
 .avatar {
   border-radius: 50%;
@@ -513,6 +511,7 @@ body {
   text-align: center;
   padding: 1em;
   font-size: 11px;
+  margin-bottom: 20px;
 }
 .footer > a {
   color: #3e52a3;
