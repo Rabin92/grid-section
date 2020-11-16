@@ -378,10 +378,52 @@ body {
 .wrap {
   padding: 2em;
   font: 500 13px/1.5 "Barlow Semi Condensed", sans-serif;
-  border: 4px solid red;
+}
+@media (min-width: 1024px) {
+  .wrap {
+    width: 85%;
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 /* ********************************* HEADER ********************************* */
+/* ******************************* MAIN STYLES ****************************** */
+@media (min-width: 1024px) {
+  .main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(200px, auto);
+    grid-gap: 15px;
+  }
+}
+
+.card-one {
+  grid-column: 1/3;
+  grid-row: 1;
+}
+
+.card-two {
+  grid-row: 1;
+}
+
+.card-three {
+  grid-row: 2/2;
+}
+
+.card-four {
+  grid-column: 2/4;
+}
+
+.card-five {
+  grid-column: 4;
+  grid-row: 1/3;
+}
+
 /* ****************************** CARD SECTION ****************************** */
 .card {
   padding: 1.5em;
@@ -390,6 +432,11 @@ body {
 }
 .card + .card {
   margin-top: 25px;
+}
+@media (min-width: 1024px) {
+  .card + .card {
+    margin-top: initial;
+  }
 }
 .card-intro {
   display: flex;
@@ -407,9 +454,31 @@ body {
 .card-content {
   margin-top: 20px;
 }
-.card-content p + p {
-  margin-top: 20px;
+.card-content h2 + p {
+  margin-top: 10px;
   color: #cfcfcf;
+  opacity: 70%;
+}
+
+.card-body-intro {
+  display: flex;
+  align-items: center;
+}
+.card-body-intro div {
+  margin-left: 15px;
+}
+.card-body-intro div p {
+  color: #48556a;
+}
+.card-body-intro div p + p {
+  opacity: 50%;
+}
+.card-body-content {
+  margin-top: 20px;
+  color: #48556a;
+}
+.card-body-content h2 + p {
+  margin-top: 10px;
   opacity: 70%;
 }
 
@@ -423,22 +492,18 @@ body {
   background-color: #48556a;
 }
 
-.card-three {
-  background-color: white;
-}
-
 .card-four {
   background-color: #19212e;
 }
 
-.card-five {
+.card-body {
   background-color: white;
 }
 
 /* ******************************* IMG-AVATAR ******************************* */
 .avatar {
   border-radius: 50%;
-  height: 40px;
+  height: 30px;
   border: 2px solid #cfcfcf;
 }
 
