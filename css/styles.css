@@ -407,14 +407,19 @@ body {
   }
 }
 
-/* ********************************* HEADER ********************************* */
 /* ******************************* MAIN STYLES ****************************** */
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 @media (min-width: 1024px) {
   .main {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: minmax(200px, auto);
     grid-gap: 15px;
+    align-items: initial;
   }
 }
 
@@ -446,6 +451,12 @@ body {
   color: white;
   border-radius: 8px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  max-width: 600px;
+}
+@media (min-width: 1024px) {
+  .card {
+    max-width: initial;
+  }
 }
 .card + .card {
   margin-top: 25px;
